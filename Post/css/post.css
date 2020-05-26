@@ -1,0 +1,219 @@
+body{
+	margin-left:3%;
+    margin-right: 3%;
+}
+
+
+#main{
+    width:100%;
+    transition: 1s;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: Azonix Regular;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.heading .openbtn
+{
+float:left;
+width:5%;
+color:black;
+font-size:30px;
+}
+
+.heading
+{
+  width:100%;
+  height:50px;
+    padding-top: 50px;
+    padding-bottom:70px;
+}
+
+.heading h2{
+	float:left;
+	width:60%;
+	font-size:50px;
+	color:black;
+	font-family:Azonix Regular;
+}
+
+.heading .media{
+	width:30%;
+	padding-top:10px;
+	padding-right:15px;
+	float:right;
+	text-align:right;
+}
+
+
+.heading .media ul{
+	 list-style-type: none;
+}
+
+.heading .media a{
+   transition: .6s;
+   padding-left:30px;
+   font-size: 30px;
+	
+
+}
+
+.media a:hover{
+   padding:0 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width:800px) {
+  .main {
+
+    padding: 0;
+  }
+  .content, {
+
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .main {
+  }
+}
+
+
+*{
+	
+   padding:0px;
+   margin:0px;
+}
+
+.instaimg{
+        font-family: Aileron-Black;
+}
+
+.instaimg:hover {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+}
+
+.response{
+    position:absolute;
+    transform:translateY(-400%) translateX(35%);
+    text-decoration:none;
+    color:white;
+    opacity:0;  
+    -moz-opacity:0;
+	-webkit-opacity:0;
+    transition-duration: 0.5s;
+}
+
+.instaimg:hover  .response{
+    opacity:1;
+    -moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+.imgcontainer{
+    overflow: hidden;
+    width:100%;
+}
+
+.caption{
+    overflow: hidden;
+    width:100%;
+    height:50px;
+    transform: translateY(-70%);
+    padding: .5% 2%;
+    opacity:0.7;
+    filter:alpha(opacity=75); 
+    background: black;
+        transition-duration: .5s;
+    
+}
+
+.captiontext{
+    width:100%;
+    height:50px;
+    transform: translateY(-170%);
+    padding: .5% 2%;
+    text-align:center;
+    transition-duration: .5s;
+
+}
+
+.captiontext p{
+    opacity:1;
+    color:white;
+    font-size: 1vw;
+    }
+
+.instaimg:hover .caption{
+    transform: translateY(-170%);
+}
+
+.instaimg:hover .captiontext{
+    transform: translateY(-270%);
+}
+
+.images2{
+    transition: 1s;
+}
+
+.images2:hover{
+    transform: scale(1.2);
+}
+
+.instagram{
+    width: 100%;
+    text-align: center;
+    font-family:Azonix Regular;
+    font-size: 4vw;   
+    padding: 2%;
+    letter-spacing: 1vw;
+}
+
+.view{
+    width: 100%;
+    background: black;
+    color: aliceblue;
+    padding: 1vw;
+    text-align: center;
+    font-family: Azonix Regular;
+    font-size: 1vw;
+    margin: 2vw 0;
+}

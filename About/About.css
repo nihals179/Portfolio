@@ -1,0 +1,156 @@
+body{
+	margin-left:3%;
+    margin-right: 3%;
+}
+
+.head{
+position: fixed;
+
+}
+
+.runleft{
+animation: left;
+animation-duration:1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes left{
+    0%{transform: translate(100%)}
+    100%{transform: translate(0%)}
+}
+
+#main{
+    width:96%;
+    transition: 1s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: Azonix Regular;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+    z-index: 1000;
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.heading .openbtn
+{
+float:left;
+width:5%;
+color:black;
+font-size:2.2vw;
+}
+
+.heading
+{
+    width:96%;
+    height:50px;
+    padding-top: 3%;
+}
+
+.heading h2{
+	float:left;
+	width:60%;
+	color:black;
+    padding-left: 3%;
+	font-family:Azonix Regular;
+    font-size: 3vw;
+}
+
+.heading .media{
+	width:20%;
+	float:right;
+	text-align:right;
+    padding-top: 1%;
+}
+
+
+.heading .media ul{
+	 list-style-type: none;
+}
+
+.heading .media a{
+   transition: .6s;
+   padding-left:7%;
+}
+
+
+.media a:hover{
+   padding:0 20px;
+}
+
+@media screen and (max-height: 450px) {
+
+}
+
+@media only screen and (max-width:800px) {
+ 
+}
+@media only screen and (max-width:500px) {
+
+}
+
+
+*{
+   padding:0px;
+   margin:0;
+}
+
+.aboutsec{
+    position:fixed;
+    top:15%;
+}
+
+.runright{
+    animation: right;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right{
+    0%{transform: translateX(-100%)}
+    100%{transform: translateX(0%)}
+}
+
+.aside{
+    float:left;
+    width:30%;
+    padding: 8% 4%;
+}
+
+.section{
+    padding: 2% 8%;
+    float:left;
+    width:45%;
+    font-family:Aileron Regular;
+    font-size:22vw;
+    text-align: center;
+
+}
